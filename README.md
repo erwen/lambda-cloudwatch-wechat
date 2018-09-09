@@ -39,14 +39,14 @@
 ## 配置lambda
 1. 登录aws账号，进入lambda服务，点击创建函数，选择从头开始创作
 
-![images](https://github.com/erwen/lambda-cloudwatch-wechat/blob/master/image/SNS-topic.png)
-    
+![images](https://github.com/erwen/lambda-cloudwatch-wechat/blob/master/image/lambda-init.png)
+
     * 名称和角色名称自定义
     * 角色选项选择，从模板创建新角色
-    
+
 2. 进入创建的函数页面，打开Designer选项卡，选中SNS选项，在配置触发器选项卡中，SNS主题选择之前创建的cloudwatch_alarms主题，点击右下角的添加，然后点击右上角的保存
 
-![images](https://github.com/erwen/lambda-cloudwatch-wechat/blob/master/image/lambdas-init.png)
+![images](https://github.com/erwen/lambda-cloudwatch-wechat/blob/master/image/lambda-designer.jpeg)
 
 3. 退回到lambda主页面，然后进入之前创建的函数，更改函数代码选项卡中的处理程序选项为cwToWechat.lambda_handler
 
@@ -76,5 +76,5 @@ pip install requests -t lambda-cloudwatch-wechat
 1. 创建一个CPU使用率的警报
 
 ![images](https://github.com/erwen/lambda-cloudwatch-wechat/blob/master/image/create-alarms.png)
-    
+
     * 选择通知时，选择刚刚创建的SNS主题
