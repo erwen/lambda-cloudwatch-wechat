@@ -34,7 +34,7 @@
 ## 配置SNS订阅
 登录aws账号，进入SNS服务，点击创建主题
 
-![images](lambda-cloudwatch-wechat/image/SNS-topic.png)
+![images](https://github.com/erwen/lambda-cloudwatch-wechat/blob/master/image/SNS-topic.png)
 
 ## 配置lambda
 1. 登录aws账号，进入lambda服务，点击创建函数，选择从头开始创作
@@ -46,11 +46,11 @@
     
 2. 进入创建的函数页面，打开Designer选项卡，选中SNS选项，在配置触发器选项卡中，SNS主题选择之前创建的cloudwatch_alarms主题，点击右下角的添加，然后点击右上角的保存
 
-![images](lambda-cloudwatch-wechat/image/lambdas-init.png)
+![images](https://github.com/erwen/lambda-cloudwatch-wechat/blob/master/image/lambdas-init.png)
 
 3. 退回到lambda主页面，然后进入之前创建的函数，更改函数代码选项卡中的处理程序选项为cwToWechat.lambda_handler
 
-![images](lambda-cloudwatch-wechat/image/lambda-function.png)
+![images](https://github.com/erwen/lambda-cloudwatch-wechat/blob/master/image/lambda-function.png)
 
     * cwToWechat为我们后面python代码的入口文件名称
     * lambda_handler为我们使用lambda处理警报的代码函数名称
@@ -70,11 +70,11 @@ pip install requests -t lambda-cloudwatch-wechat
 5. 打包zip类型代码（不要打包主文件夹，只需打包其中自己写的代码和第三方模块）
 6. 上传代码到lambda，打开aws页面中的lambda中的创建的函数，函数代码选项卡中的代码输入类型，选择上传.zip文件，点击保存
 
-![images](lambda-cloudwatch-wechat/image/lambda-code-upload.png)
+![images](https://github.com/erwen/lambda-cloudwatch-wechat/blob/master/image/lambda-code-upload.png)
 
 ## 创建警报进行报警测试
 1. 创建一个CPU使用率的警报
 
-![images](lambda-cloudwatch-wechat/image/create-alarms.png)
+![images](https://github.com/erwen/lambda-cloudwatch-wechat/blob/master/image/create-alarms.png)
     
     * 选择通知时，选择刚刚创建的SNS主题
