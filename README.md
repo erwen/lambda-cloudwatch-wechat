@@ -66,7 +66,7 @@ https://github.com/erwen/lambda-cloudwatch-wechat.git
 ```
 pip install requests -t lambda-cloudwatch-wechat
 ```
-4. 替换cwToWechat.py中的corpid,agentid,appsecret为自己的微信信息
+4. 替换cwToWechat.py中的corpid,agentid,appsecret和toparty为自己的微信信息
 5. 打包zip类型代码（不要打包主文件夹，只需打包其中自己写的代码和第三方模块）
 6. 上传代码到lambda，打开aws页面中的lambda中的创建的函数，函数代码选项卡中的代码输入类型，选择上传.zip文件，点击保存
 

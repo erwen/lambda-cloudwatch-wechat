@@ -8,6 +8,7 @@ import requests
 corpid = '*********'
 agentid = '***************'
 appsecret = '*****************'
+toparty = 1
 
 token_url='https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=' + corpid + '&corpsecret=' + appsecret
 
@@ -41,7 +42,7 @@ def lambda_handler(event, context):
 
     params={
         # "touser": touser,
-       "toparty": 1,
+       "toparty": toparty,
         "msgtype": "text",
         "agentid": agentid,
         "text": {
