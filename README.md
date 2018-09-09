@@ -39,7 +39,7 @@
 ## 配置lambda
 1. 登录aws账号，进入lambda服务，点击创建函数，选择从头开始创作
 
-![images](lambda-cloudwatch-wechat/image/lambdas-init.png)
+![images](https://github.com/erwen/lambda-cloudwatch-wechat/blob/master/image/SNS-topic.png)
     
     * 名称和角色名称自定义
     * 角色选项选择，从模板创建新角色
