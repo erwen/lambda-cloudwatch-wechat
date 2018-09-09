@@ -78,3 +78,7 @@ pip install requests -t lambda-cloudwatch-wechat
 ![images](https://github.com/erwen/lambda-cloudwatch-wechat/blob/master/image/create-alarms.png)
 
     * 选择通知时，选择刚刚创建的SNS主题
+
+2. 打开微信查看测试结果
+
+![images](https://github.com/erwen/lambda-cloudwatch-wechat/blob/master/image/wechat-test.jpeg)
