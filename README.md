@@ -46,9 +46,9 @@
 
 2. 进入创建的函数页面，打开Designer选项卡，选中SNS选项，在配置触发器选项卡中，SNS主题选择之前创建的cloudwatch_alarms主题，点击右下角的添加，然后点击右上角的保存
 
-![images](https://github.com/erwen/lambda-cloudwatch-wechat/blob/master/image/lambda-designer.jpeg)
+![images](https://raw.githubusercontent.com/erwen/lambda-cloudwatch-wechat/master/image/lambda-designer.jpeg)
 
-3. 退回到lambda主页面，然后进入之前创建的函数，更改函数代码选项卡中的处理程序选项为cwToWechat.lambda_handler
+1. 退回到lambda主页面，然后进入之前创建的函数，更改函数代码选项卡中的处理程序选项为cwToWechat.lambda_handler
 
 ![images](https://github.com/erwen/lambda-cloudwatch-wechat/blob/master/image/lambda-function.png)
 
