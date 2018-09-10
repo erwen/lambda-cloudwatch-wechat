@@ -21,7 +21,7 @@
     * 部门ID
 
 ## 监控数据流向图
-![image]{https://raw.githubusercontent.com/erwen/lambda-cloudwatch-wechat/master/image/lambda-cloudwatch-wechat.png}
+![image](https://raw.githubusercontent.com/erwen/lambda-cloudwatch-wechat/master/image/lambda-cloudwatch-wechat.png)
 
 ## 分享中不包括的内容
 企业微信号的注册、设置、信息的收集，网上已经有很多教程，这里就不详述了。
